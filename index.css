@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --clr-primary: hsl(257, 40%, 49%);
+    --clr-secondary: hsl(300, 69%, 71%);
+    --clr-light: #fff;
+}
+
+html {
+    width: 100%;
+    height: auto;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--clr-primary);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    color: var(--clr-light);
+    line-height: 2.25rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-body);
+    color: var(--clr-light);
+    line-height: 1.75rem;
+}
+
+main{
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ul-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 350px;
+
+}
+
+.logo {
+    
+    width: 8rem;
+}
+
+.illustration {
+    margin-block: 3.5rem;;
+    width: 100%;
+    max-width: 350px;
+}
+
+.lr-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    max-width: 350px;
+
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    background-color: var(--clr-light);
+    border: none;
+    border-radius: 20px;
+    margin: 2rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--clr-secondary);
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fab {
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    margin: 2rem 0.25rem;
+    border: 1px solid black;
+    border-radius: 14px;
+    filter: invert(100%);
+    cursor: pointer;
+    
+}
+
+.fab:hover {
+    filter: invert(50%) sepia(0.1) saturate(6900%) hue-rotate(300deg) brightness(118%) contrast(119%); white;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        flex-direction: row;
+        justify-items: center;
+    }
+}
